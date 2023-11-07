@@ -13,6 +13,9 @@ console.log(mondayWork());
 console.log(mondayWork("work from home")
 );
 
-function wrapAdjective() {
-  return
+function wrapAdjective(symbol) {
+  return function(adjective = "a hard worker") {
+    return `You are ${symbol}${adjective}${symbol}!`;
+  }
 }
+console.log(wrapAdjective())
